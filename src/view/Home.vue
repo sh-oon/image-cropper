@@ -2,7 +2,7 @@
   <div class="flex w-full h-screen">
     <MainNav/>
     <div class="flex-col flex gap-2">
-      ㅎㅇ
+
     </div>
   </div>
 </template>

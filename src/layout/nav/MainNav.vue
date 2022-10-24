@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col min-h-full w-2/12 bg-amber-200 overflow-y-scroll">
+  <div class="flex flex-col min-h-full p-2 w-2/12 bg-amber-200 overflow-y-scroll">
     <div>Profile</div>
     <div v-for="(menu, i) in menus" :key="i"
          class="w-full flex flex-col"

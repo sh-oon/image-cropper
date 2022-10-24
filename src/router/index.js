@@ -5,8 +5,14 @@ const routes = [
   {
     path:'/',
     name: 'Home',
-    component: () => import('@/view/Index.vue'),
-    children: []
+    redirect: '/main',
+    component: () => import('@/view/Home.vue'),
+    children: [{path: '/main', component: () => import('@/view/Home.vue')}]
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'Error',
+    component: () => import('@/view/Error.vue')
   }
 ]
 
